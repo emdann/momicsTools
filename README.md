@@ -18,7 +18,8 @@ C. Other methods for feature extraction
 
 **Filtering/refining peaks**
 
-**Filtering cells:** Doublet detection etc etc
+###### Filtering cells: 
+Doublet detection etc etc
 
 #### Dimensionality reduction
 [blogpost on dimensionality reduction in scATAC-seq](http://andrewjohnhill.com/blog/2019/05/06/dimensionality-reduction-for-scatac-data/)
