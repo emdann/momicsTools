@@ -1,5 +1,12 @@
 A collection of resources and knowledge for analysis of scATAC+scRNA
+---
+### Table of contents
 
+- [scATAC analysis](https://github.com/emdann/momicsTools#scatac-analysis)
+- [Joint dimensionality reduction](https://github.com/emdann/momicsTools#joint-dimensionality-reduction)
+- [Publicly available multi-omic datasets](https://github.com/emdann/momicsTools#publicly-available-multi-omic-datasets)
+
+---
 ### scATAC analysis
 
 #### Barcode Multiplets
@@ -35,11 +42,13 @@ Summarising accessibility over gene promoters/bodies is often useful for data ex
 #### Motif analysis 
 - [chromVAR](https://github.com/GreenleafLab/chromVAR): determine variations in chromatin accessibility across peaks containing a set of TF binding motifs
 
+---
 ### Joint dimensionality reduction
 
 - Multi-omics factors analysis: ([paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02015-1)) ([code](https://github.com/bioFAM/MOFA2)) ([vignette](https://raw.githack.com/bioFAM/MOFA2_tutorials/master/R_tutorials/10x_scRNA_scATAC.html))
 - Seurat V4 Weighted Nearest neighbor analysis ([paper](https://www.biorxiv.org/content/10.1101/2020.10.12.335331v1))([code](https://github.com/satijalab/seurat))([vignette](https://satijalab.org/seurat/v4.0/weighted_nearest_neighbor_analysis.html))
 
+---
 ### Publicly available multi-omic datasets
 
 _(supposedly we will have more papers soon, add newest on top)_
