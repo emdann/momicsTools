@@ -47,7 +47,12 @@ Different pipelines/papers use different strategies to define a feature set.
     - [ArchR doublet detection](https://www.archrproject.com/bookdown/how-does-doublet-identification-work-in-archr.html) 
 
 #### Dimensionality reduction
-[blogpost on dimensionality reduction in scATAC-seq](http://andrewjohnhill.com/blog/2019/05/06/dimensionality-reduction-for-scatac-data/)
+
+* TF-IDF + SVD (Latent Semantic Indexing) ([Signac](https://satijalab.org/signac/articles/pbmc_vignette.html#normalization-and-linear-dimensional-reduction-1)) ([ArchR](https://www.archrproject.com/bookdown/archrs-lsi-implementation.html))
+* Latent Dirichlet Allocation ([cisTopic](http://htmlpreview.github.io/?https://github.com/aertslab/cisTopic/blob/master/vignettes/WarpLDA_CompleteAnalysis.html))
+
+Additional resources:
+* [Blogpost on dimensionality reduction in scATAC-seq](http://andrewjohnhill.com/blog/2019/05/06/dimensionality-reduction-for-scatac-data/)
 
 #### Defining gene-level features
 Summarising accessibility over gene promoters/bodies is often useful for data exploration and for qualitative or quantitative comparison with RNA. Different pipelines/papers use different strategies to reduce accessibility signal to a gene x cell matrix. 
