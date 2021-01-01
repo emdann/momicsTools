@@ -78,6 +78,7 @@ Summarising accessibility over gene promoters/bodies is often useful for data ex
 
 _(supposedly we will have more papers soon, add newest on top)_
 
+- [Trevino et al. 2020](https://www.biorxiv.org/content/10.1101/2020.12.29.424636v1.full.pdf) Chromatin and gene-regulatory dynamics of the developing human cerebral cortex at single-cell resolution
 - [Example data from 10X](https://support.10xgenomics.com/single-cell-multiome-atac-gex/datasets)
 - [SHARE-seq data](https://www.cell.com/cell/fulltext/S0092-8674(20)31253-8?rss=yes) 
 - [SNARE-seq data](https://www.nature.com/articles/s41587-019-0290-0)
