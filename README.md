@@ -78,6 +78,7 @@ Summarising accessibility over gene promoters/bodies is often useful for data ex
 
 _(supposedly we will have more papers soon, add newest on top)_
 
+- [Dou et al. 2020](https://www.biorxiv.org/content/10.1101/2020.12.11.422014v1.full.pdf) 9383 mouse retina cells, used as gold standard for diagonal integration algorithm 
 - [Trevino et al. 2020](https://www.biorxiv.org/content/10.1101/2020.12.29.424636v1.full.pdf) Chromatin and gene-regulatory dynamics of the developing human cerebral cortex at single-cell resolution (8981 cells)
 - [Example data from 10X](https://support.10xgenomics.com/single-cell-multiome-atac-gex/datasets)
 - [SHARE-seq data](https://www.cell.com/cell/fulltext/S0092-8674(20)31253-8?rss=yes) 
