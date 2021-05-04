@@ -52,6 +52,7 @@ Different pipelines/papers use different strategies to define a feature set.
 
 * TF-IDF + SVD (Latent Semantic Indexing) ([Signac](https://satijalab.org/signac/articles/pbmc_vignette.html#normalization-and-linear-dimensional-reduction-1)) ([ArchR](https://www.archrproject.com/bookdown/archrs-lsi-implementation.html))
 * Latent Dirichlet Allocation ([cisTopic](http://htmlpreview.github.io/?https://github.com/aertslab/cisTopic/blob/master/vignettes/WarpLDA_CompleteAnalysis.html))
+* PeakVI ([paper](https://www.biorxiv.org/content/10.1101/2021.04.29.442020v1))([code](https://github.com/YosefLab/scvi-tools/blob/master/scvi/model/_peakvi.py))
 
 Additional resources:
 * [Blogpost on dimensionality reduction in scATAC-seq](http://andrewjohnhill.com/blog/2019/05/06/dimensionality-reduction-for-scatac-data/)
