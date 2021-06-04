@@ -5,7 +5,7 @@ A collection of resources for analysis of scATAC+scRNA multi-omic data
 ### Table of contents
 
 - [scATAC analysis](https://github.com/emdann/momicsTools#scatac-analysis)
-- [Data structures for multi-omics]
+- [Data structures for multi-omics](https://github.com/emdann/momicsTools#data-structures-for-multi-omics)
 - [Joint dimensionality reduction](https://github.com/emdann/momicsTools#joint-dimensionality-reduction)
 - [Publicly available multi-omic datasets](https://github.com/emdann/momicsTools#publicly-available-multi-omic-datasets)
 
