@@ -5,6 +5,7 @@ A collection of resources for analysis of scATAC+scRNA multi-omic data
 ### Table of contents
 
 - [scATAC analysis](https://github.com/emdann/momicsTools#scatac-analysis)
+- [Data structures for multi-omics]
 - [Joint dimensionality reduction](https://github.com/emdann/momicsTools#joint-dimensionality-reduction)
 - [Publicly available multi-omic datasets](https://github.com/emdann/momicsTools#publicly-available-multi-omic-datasets)
 
@@ -69,18 +70,24 @@ Summarising accessibility over gene promoters/bodies is often useful for data ex
 - [chromVAR](https://github.com/GreenleafLab/chromVAR): determine variations in chromatin accessibility across peaks containing a set of TF binding motifs
 
 ---
+### Data structures for multi-omics
+
+- MUON data ([code](https://github.com/gtca/muon))([preprint](https://www.biorxiv.org/content/10.1101/2021.06.01.445670v1.full.pdf)) - python - extension of [AnnData](https://anndata.readthedocs.io/en/latest/)
+- MultiAssayExperiment object ([code](https://bioconductor.org/packages/release/bioc/html/MultiAssayExperiment.html)) - R/Bioconductor - extension of [SummarizedExperiment](https://bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html)
+---
 ### Joint dimensionality reduction
 
 
 - j-SNE and j-UMAP ([paper](https://www.biorxiv.org/content/10.1101/2021.01.10.426098v1)) ([code](https://github.com/canzarlab/JVis-learn))
 - Multi-omics factors analysis: ([paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02015-1)) ([code](https://github.com/bioFAM/MOFA2)) ([vignette](https://raw.githack.com/bioFAM/MOFA2_tutorials/master/R_tutorials/10x_scRNA_scATAC.html))
-- Seurat V4 Weighted Nearest neighbor analysis ([paper](https://www.biorxiv.org/content/10.1101/2020.10.12.335331v1))([code](https://github.com/satijalab/seurat))([vignette](https://satijalab.org/seurat/v4.0/weighted_nearest_neighbor_analysis.html))
+- Seurat V4 Weighted Nearest Neighbor analysis ([paper](https://www.cell.com/cell/fulltext/S0092-8674%2821%2900583-3))([preprint](https://www.biorxiv.org/content/10.1101/2020.10.12.335331v1))([code](https://github.com/satijalab/seurat))([vignette](https://satijalab.org/seurat/v4.0/weighted_nearest_neighbor_analysis.html)) - extends to > 2 modalities
 
 ---
 ### Publicly available multi-omic datasets
 
-_(supposedly we will have more papers soon, add newest on top)_
+_(add newest on top)_
 
+- [Mimitou et al. 2021](https://www.nature.com/articles/s41587-021-00927-2) - 10X gemonics multiome + surface proteins, demonstrated on PBMCs
 - [Dou et al. 2020](https://www.biorxiv.org/content/10.1101/2020.12.11.422014v1.full.pdf) 9383 mouse retina cells, used as gold standard for diagonal integration algorithm 
 - [Trevino et al. 2020](https://www.biorxiv.org/content/10.1101/2020.12.29.424636v1.full.pdf) Chromatin and gene-regulatory dynamics of the developing human cerebral cortex at single-cell resolution (8981 cells)
 - [Example data from 10X](https://support.10xgenomics.com/single-cell-multiome-atac-gex/datasets)
