@@ -81,6 +81,7 @@ Summarising accessibility over gene promoters/bodies is often useful for data ex
 - j-SNE and j-UMAP ([paper](https://www.biorxiv.org/content/10.1101/2021.01.10.426098v1)) ([code](https://github.com/canzarlab/JVis-learn))
 - Multi-omics factors analysis: ([paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02015-1)) ([code](https://github.com/bioFAM/MOFA2)) ([vignette](https://raw.githack.com/bioFAM/MOFA2_tutorials/master/R_tutorials/10x_scRNA_scATAC.html))
 - Seurat V4 Weighted Nearest Neighbor analysis ([paper](https://www.cell.com/cell/fulltext/S0092-8674%2821%2900583-3))([preprint](https://www.biorxiv.org/content/10.1101/2020.10.12.335331v1))([code](https://github.com/satijalab/seurat))([vignette](https://satijalab.org/seurat/v4.0/weighted_nearest_neighbor_analysis.html)) - extends to > 2 modalities
+- [Multigrate](https://icml-compbio.github.io/2021/papers/WCBICML2021_paper_44.pdf)
 
 ---
 ### Publicly available multi-omic datasets
