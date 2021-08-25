@@ -82,7 +82,7 @@ Summarising accessibility over gene promoters/bodies is often useful for data ex
 - [Multigrate](https://icml-compbio.github.io/2021/papers/WCBICML2021_paper_44.pdf)
 - MultiVI ([paper](https://www.biorxiv.org/content/10.1101/2021.08.20.457057v1.full))([vignette](https://docs.scvi-tools.org/en/stable/user_guide/notebooks/MultiVI_tutorial.html))
 
-## Peak-gene matching
+## Peak-gene matching
 
 - DORC analysis ([example code](https://github.com/buenrostrolab/stimATAC_analyses_code/blob/master/R/runDORCs_stim.R))
 
