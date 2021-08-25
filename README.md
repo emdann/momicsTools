@@ -1,22 +1,21 @@
 
-A collection of resources for analysis of scATAC+scRNA multi-omic data
+A collection of resources on analysis of scATAC+scRNA multi-omic data
 
----
-### Table of contents
+## Table of contents
 
 - [scATAC analysis](https://github.com/emdann/momicsTools#scatac-analysis)
 - [Data structures for multi-omics](https://github.com/emdann/momicsTools#data-structures-for-multi-omics)
 - [Joint dimensionality reduction](https://github.com/emdann/momicsTools#joint-dimensionality-reduction)
+- [Peak-gene matching](https://github.com/emdann/momicsTools#peak-gene-matching)
 - [Publicly available multi-omic datasets](https://github.com/emdann/momicsTools#publicly-available-multi-omic-datasets)
 
----
-### scATAC analysis
+## scATAC analysis
 <!-- 
 #### Barcode Multiplets
 This was raised as a problem in sn 10X protocols 
 -->
 
-#### Picking features
+### Picking features
 Because Tn5 insertions can take place anywhere in the genome, after alignment for each cell barcode we will have a set of fragments covering different genomic positions. To allow comparison between cells we need to define a common set of genomic features. Once a feature set is defined, we count the number of fragments overlapping each feature for each single-cell, obtaining a (quasi-)binary feature x cell count matrix.
 
 Different pipelines/papers use different strategies to define a feature set. 
@@ -34,7 +33,7 @@ Different pipelines/papers use different strategies to define a feature set.
     - [Scregseg](https://github.com/BIMSBbioinfo/scregseg): uses an HMM with Dirichlet-Multinomial emission probabilities to segment the genome according to distinct relative cross-cell accessibility profiles ([paper](https://www.biorxiv.org/content/10.1101/2020.06.26.173377v1))
     - [BROCKMAN]: k-mer based accessibility ([paper](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2255-6))
 
-#### Quality control
+### Quality control
 
 * Calculating QC metrics ([Signac](https://satijalab.org/signac/articles/pbmc_vignette.html#computing-qc-metrics-1))([ArchR](https://www.archrproject.com/bookdown/plotting-sample-fragment-size-distribution-and-tss-enrichment-profiles-.html))
     - TSS enrichment: we expect an enrichment of fragments around transcription start sites
@@ -49,7 +48,7 @@ Different pipelines/papers use different strategies to define a feature set.
     - Basic filtering of cells with very low coverage (these often mess up dimensionality reduction if unfiltered)
     - [ArchR doublet detection](https://www.archrproject.com/bookdown/how-does-doublet-identification-work-in-archr.html) 
 
-#### Dimensionality reduction
+### Dimensionality reduction
 
 * TF-IDF + SVD (Latent Semantic Indexing) ([Signac](https://satijalab.org/signac/articles/pbmc_vignette.html#normalization-and-linear-dimensional-reduction-1)) ([ArchR](https://www.archrproject.com/bookdown/archrs-lsi-implementation.html))
 * Latent Dirichlet Allocation ([cisTopic](http://htmlpreview.github.io/?https://github.com/aertslab/cisTopic/blob/master/vignettes/WarpLDA_CompleteAnalysis.html))
@@ -58,7 +57,7 @@ Different pipelines/papers use different strategies to define a feature set.
 Additional resources:
 * [Blogpost on dimensionality reduction in scATAC-seq](http://andrewjohnhill.com/blog/2019/05/06/dimensionality-reduction-for-scatac-data/)
 
-#### Defining gene-level features
+### Defining gene-level features
 Summarising accessibility over gene promoters/bodies is often useful for data exploration and for qualitative or quantitative comparison with RNA. Different pipelines/papers use different strategies to reduce accessibility signal to a gene x cell matrix. 
 
 - Counting fragments over gene bodies and promoters (implemented in [Signac](https://satijalab.org/signac/reference/GeneActivity.html))
@@ -66,17 +65,15 @@ Summarising accessibility over gene promoters/bodies is often useful for data ex
 - [Cicero gene activity score](https://cole-trapnell-lab.github.io/cicero-release/docs_m3/##cicero-gene-activity-scores): based on measuring co-accessibility between peaks
 - [Gene scores from cisTopic](https://www.embopress.org/doi/full/10.15252/msb.20209438): taking the average de-noised accessibility signal from peaks around each gene ([example implementation](https://github.com/emdann/scATAC_prep/blob/master/N2_add_cistopic.ipynb))
 
-#### Motif analysis 
+### Motif analysis 
 - [chromVAR](https://github.com/GreenleafLab/chromVAR): determine variations in chromatin accessibility across peaks containing a set of TF binding motifs
 
----
-### Data structures for multi-omics
+## Data structures for multi-omics
 
 - MUON data ([code](https://github.com/gtca/muon))([preprint](https://www.biorxiv.org/content/10.1101/2021.06.01.445670v1.full.pdf)) - python - extension of [AnnData](https://anndata.readthedocs.io/en/latest/)
 - MultiAssayExperiment object ([code](https://bioconductor.org/packages/release/bioc/html/MultiAssayExperiment.html)) - R/Bioconductor - extension of [SummarizedExperiment](https://bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html)
----
-### Joint dimensionality reduction
 
+## Joint dimensionality reduction
 
 - j-SNE and j-UMAP ([paper](https://www.biorxiv.org/content/10.1101/2021.01.10.426098v1)) ([code](https://github.com/canzarlab/JVis-learn))
 - Multi-omics factors analysis: ([paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02015-1)) ([code](https://github.com/bioFAM/MOFA2)) ([vignette](https://raw.githack.com/bioFAM/MOFA2_tutorials/master/R_tutorials/10x_scRNA_scATAC.html))
@@ -85,12 +82,16 @@ Summarising accessibility over gene promoters/bodies is often useful for data ex
 - [Multigrate](https://icml-compbio.github.io/2021/papers/WCBICML2021_paper_44.pdf)
 - MultiVI ([paper](https://www.biorxiv.org/content/10.1101/2021.08.20.457057v1.full))([vignette](https://docs.scvi-tools.org/en/stable/user_guide/notebooks/MultiVI_tutorial.html))
 
----
-### Publicly available multi-omic datasets
+## Peak-gene matching
+
+- DORC analysis ([example code](https://github.com/buenrostrolab/stimATAC_analyses_code/blob/master/R/runDORCs_stim.R))
+
+## Publicly available multi-omic datasets
 
 _(add newest on top)_
 
-- [Mimitou et al. 2021](https://www.nature.com/articles/s41587-021-00927-2) - 10X gemonics multiome + surface proteins, demonstrated on PBMCs
+- [Fleck et al. 2021](https://www.biorxiv.org/content/10.1101/2021.08.24.457460v1) - Multiome data of human cerebral organoids
+- [Mimitou et al. 2021](https://www.nature.com/articles/s41587-021-00927-2) - 10X genonics multiome + surface proteins, demonstrated on PBMCs
 - [Dou et al. 2020](https://www.biorxiv.org/content/10.1101/2020.12.11.422014v1.full.pdf) 9383 mouse retina cells, used as gold standard for diagonal integration algorithm 
 - [Trevino et al. 2020](https://www.biorxiv.org/content/10.1101/2020.12.29.424636v1.full.pdf) Chromatin and gene-regulatory dynamics of the developing human cerebral cortex at single-cell resolution (8981 cells)
 - [Example data from 10X](https://support.10xgenomics.com/single-cell-multiome-atac-gex/datasets)
