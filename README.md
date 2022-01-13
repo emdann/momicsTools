@@ -81,6 +81,7 @@ Summarising accessibility over gene promoters/bodies is often useful for data ex
 - Schema ([paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02313-2)) ([code](https://schema-multimodal.readthedocs.io/en/latest/overview.html))
 - [Multigrate](https://icml-compbio.github.io/2021/papers/WCBICML2021_paper_44.pdf)
 - MultiVI ([paper](https://www.biorxiv.org/content/10.1101/2021.08.20.457057v1.full))([vignette](https://docs.scvi-tools.org/en/stable/user_guide/notebooks/MultiVI_tutorial.html))
+- scMVP ([paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02595-6))([code](https://github.com/bm2-lab/scMVP))
 
 ## Peak-gene matching
 
