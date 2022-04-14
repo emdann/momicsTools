@@ -86,6 +86,7 @@ Summarising accessibility over gene promoters/bodies is often useful for data ex
 ## Peak-gene matching
 
 - DORC analysis ([example code](https://github.com/buenrostrolab/stimATAC_analyses_code/blob/master/R/runDORCs_stim.R))
+- SEAcells - aggregating at metacell level for regulatory interation analysis ([code](https://github.com/dpeerlab/SEACells)) ([paper](https://www.biorxiv.org/content/10.1101/2022.04.02.486748v1))
 
 ## Publicly available multi-omic datasets
 
