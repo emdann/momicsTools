@@ -72,6 +72,7 @@ Summarising accessibility over gene promoters/bodies is often useful for data ex
 
 - MUON data ([code](https://github.com/gtca/muon))([preprint](https://www.biorxiv.org/content/10.1101/2021.06.01.445670v1.full.pdf)) - python - extension of [AnnData](https://anndata.readthedocs.io/en/latest/)
 - MultiAssayExperiment object ([code](https://bioconductor.org/packages/release/bioc/html/MultiAssayExperiment.html)) - R/Bioconductor - extension of [SummarizedExperiment](https://bioconductor.org/packages/release/bioc/html/SummarizedExperiment.html)
+- Alternative experiment slot in SingleCellExperiment object (see [OSCA](http://bioconductor.org/books/3.14/OSCA.advanced/integrating-with-protein-abundance.html)])
 
 ## Joint dimensionality reduction
 
@@ -83,6 +84,7 @@ Summarising accessibility over gene promoters/bodies is often useful for data ex
 - MultiVI ([paper](https://www.biorxiv.org/content/10.1101/2021.08.20.457057v1.full))([vignette](https://docs.scvi-tools.org/en/stable/user_guide/notebooks/MultiVI_tutorial.html))
 - scMVP ([paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02595-6))([code](https://github.com/bm2-lab/scMVP))
 - NeurIPS Open Problems challenge results: Multimodal single cell data integration challenge: results and lessons learned ([paper](https://www.biorxiv.org/content/10.1101/2022.04.11.487796v1.full))
+- Cobolt ([paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02556-z)) ([code](https://github.com/epurdom/cobolt_manuscript))
 
 ## Peak-gene matching
 
