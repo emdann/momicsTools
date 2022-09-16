@@ -91,10 +91,11 @@ Summarising accessibility over gene promoters/bodies is often useful for data ex
 - DORC analysis ([example code](https://github.com/buenrostrolab/stimATAC_analyses_code/blob/master/R/runDORCs_stim.R))
 - SEAcells - aggregating at metacell level for regulatory interation analysis ([code](https://github.com/dpeerlab/SEACells)) ([paper](https://www.biorxiv.org/content/10.1101/2022.04.02.486748v1))
 
-## Publicly available multi-omic datasets
+## Publicly available multi-omic datasets 
 
 _(add newest on top)_
 
+- [Arguelaguet et al. 2022](https://www.biorxiv.org/content/10.1101/2022.06.15.496239v1.full) - 10X multiome data of early mouse organogenesis 
 - [Fleck et al. 2021](https://www.biorxiv.org/content/10.1101/2021.08.24.457460v1) - Multiome data of human cerebral organoids
 - [Mimitou et al. 2021](https://www.nature.com/articles/s41587-021-00927-2) - 10X genonics multiome + surface proteins, demonstrated on PBMCs
 - [Dou et al. 2020](https://www.biorxiv.org/content/10.1101/2020.12.11.422014v1.full.pdf) 9383 mouse retina cells, used as gold standard for diagonal integration algorithm 
